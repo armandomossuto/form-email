@@ -3,6 +3,6 @@ import { sendEmail } from 'controller/index'
  
 let router = new Router();
 
-router.post('/accounts', sendEmail);
+router.post('/contact', sendEmail);
 
 export default router;
