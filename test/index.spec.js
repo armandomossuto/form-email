@@ -1,0 +1,1 @@
+import '../src/controller/sendEmail/test.js'
