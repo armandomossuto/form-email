@@ -6,7 +6,7 @@
   "author": "Armando Mossuto",
   "license": "ISC",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --require @babel/register",
+    "test": "node build/index.js",
     "start": "nodemon --exec babel-node src/index.js ",
     "debug": "nodemon --exec babel-node src/index.js --inspect",
     "build": "babel -d ./build ./src -s",
