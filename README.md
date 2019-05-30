@@ -55,13 +55,15 @@ const onSubmitContactForm = () => {
           onFormEmailFailure();
         }
       }).catch(err => onFormEmailFailure(err))
-  }```
+  }
+```
 
 #Configuration
 * You will need to create a configuration.js file in you src folder and export from there a `port` for indicating your desired port numer for the server, the `email` and respective `password` for sending the mail from the server. You can use enviromental variables to hide confidential data. This file by default in excluded from git as you can see in the `.gitignore` file. 
 * In `autorizedReciepents` array you can highlight all autorized recipients, including the `codeName` to be used from the client post request.
 * An example of this code
-```export const port = process.env.PORT || 5000;
+```
+export const port = process.env.PORT || 5000;
 
 export const email = 'yourEmailUsedToSend';
 
@@ -81,7 +83,8 @@ const generateReciepent = (codeName, email) => ({
 export const autorizedReciepents = [
     generateReciepent('emailA','emailA@test.com'),
     generateReciepent('emailB','emailA@test.com''),
-]```
+]
+```
 
 #Running / Development
 `npm run:start:develop`
