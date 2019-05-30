@@ -8,9 +8,9 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --require @babel/register",
     "start": "node build/index.js",
+    "start:develop": "nodemon --exec babel-node src/index.js",
     "debug": "nodemon --exec babel-node src/index.js --inspect",
     "build": "babel -d ./build ./src -s",
-    "serve": "node build/index.js",
     "clean": "rm -rf build && mkdir build"
   },
   "dependencies": {
